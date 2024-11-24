@@ -55,12 +55,13 @@
 }
 .container>p{
     text-align: end;
+    margin-top: 5vh;
 }
 
 @media (max-width: 768px) {
     .gridContainer1{
         grid-template-columns: 90vw;
-        grid-template-rows: 35vh 35vh;
+        grid-template-rows: 45vh 45vh 45vh 45vh 45vh;
         margin-top: 5vh;
     }
     .gridContainer1 div p{
@@ -87,5 +88,8 @@
     }
 }
 @media (max-width: 623px) {
-    
+    .gridContainer1 div p{
+        overflow:visible;
+        margin-top: 5vh;
+    }
 }
