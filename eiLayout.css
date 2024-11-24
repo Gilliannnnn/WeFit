@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+    color: #ffffff;
+    text-decoration: none;
+}
+body {
+    background-color: #161A1D;
+}
+a:hover {
+    opacity: 0.6;
+    color: #BA181B;
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 7vh;
+    border-bottom: 2px solid #BA181B;  
+    padding: 10px;
+}
+nav p {
+    margin-left: 20px;
+}
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+nav ul li a {
+    padding: 20px;
+    font-size: 18px;
+}
+nav ul li:nth-child(4) {
+    font-size: 35px;
+    font-weight: bolder;
+    padding: 20px;
+    cursor: pointer;
+}
+nav ul li:nth-child(4):hover {
+    opacity: 0.6;
+    color: #BA181B;
+}
+.optionChoices {
+    position: absolute;
+    right: 40px;
+    top: 35px;
+    width: 300px;
+    height: 250px;
+    border: 2px solid #a4a4a4;
+    border-radius: 24px 0px 24px 0px;
+    font-size: 24px;
+    flex-direction: column;
+    background-color: #161A1D;
+    display: none;
+}
+.optionChoices p {
+    border-bottom: 1px solid #a4a4a4;
+    width: 250px;
+    height: 40px;
+    text-align: center;
+    margin-top: 30px;
+}
+.optionChoices p:hover {
+    background-color: #a4a4a4;
+}
+.logo {
+    display: flex; 
+    align-items: center;
+}
+.logo img {
+    height: 50px;
+}
+.logo p {
+    color: #BA181B;
+}
+
+@media (max-width: 768px) {
+
+    }
+@media (max-width: 617px) {
+    nav ul li a{
+        font-size: 14px;
+        padding: 5px;
+    }
+    .logo p{
+        display: none;
+    }
+}
+
+nav ul li:nth-child(4) {
+    color: #BA181B;
+}
+
+.container {
+    height: 93vh;
+}
+
+.aboutAndTools {
+    display: flex;
+    align-items: start;
+    justify-content: space-around;
+    font-size: 20px;
+}
+
+.gridContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 30vh 30vh;
+}
+
+.gridContainer div {
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+}
+
+.gridContainer div img{
+    height: 120px;
+    width: 120px;
+}
+
+.aboutAndTools div p:nth-child(1) {
+    margin-top: 5vh;
+    margin-bottom: 3vh;
+    text-align: center;
+    font-size: 32px;
+}
+
+.equipmentDescription p:nth-child(2) {
+    width: 25vw;
+    padding: 20px;
+    border-right: 1px solid #BA181B;
+}
+
+.container > p {
+    text-align: right;
+    margin-right: 4vw;
+    margin-top: 5vh;
+}
+
+@media (max-width: 768px) {
+    .aboutAndTools{
+        align-items: center;
+        flex-direction: column;
+    }
+    .aboutAndTools .equipmentDescription p{
+        width: 100%;
+        padding: 0% 10%;
+    }
+    .equipmentDescription p:nth-child(2){
+        margin-bottom: 5vh;
+        padding: 5vw;
+        display: inline;
+        border: none;
+    }
+    .gridContainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 35vh 35vh 35vh;
+    }
+}
+@media (max-width: 617px) {
+    .aboutAndTools {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        font-size: 20px;
+    }
+}
+
