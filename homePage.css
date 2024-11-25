@@ -39,6 +39,7 @@ nav ul li:nth-child(1) a{
 }
 .pAndBtn button:hover{
     background-color: #A4A4A4;
+    font-size: 7px;
 }
 .picHome img{
     margin-top: 10vh;
